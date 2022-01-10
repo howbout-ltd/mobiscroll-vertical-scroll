@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {MbscEventcalendarView} from "@mobiscroll/angular";
 
 @Component({
   selector: 'app-home',
@@ -6,6 +7,12 @@ import { Component } from '@angular/core';
   styleUrls: ['home.page.scss'],
 })
 export class HomePage {
+
+  public monthViewSettings: MbscEventcalendarView = {
+    calendar: {
+      scroll: 'vertical',
+    },
+  };
 
   constructor() {}
 
