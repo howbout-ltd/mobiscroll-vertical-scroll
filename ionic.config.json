@@ -1,5 +1,7 @@
 {
   "name": "MbscEventCalendarTest",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }
