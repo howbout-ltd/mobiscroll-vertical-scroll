@@ -1,5 +1,5 @@
 import { ElementRef, TemplateRef } from '@angular/core';
-import { MbscResource } from '../../core/components/eventcalendar/eventcalendar';
+import { MbscResource } from '../../core/shared/calendar-view/calendar-view.types';
 import { CalendarViewBase, MbscCalendarLabel, ViewType } from '../../core/shared/calendar-view/calendar-view';
 import { InstanceServiceBase } from '../../core/shared/instance-service';
 import { DateType, ITimezonePlugin } from '../../core/util/datetime';

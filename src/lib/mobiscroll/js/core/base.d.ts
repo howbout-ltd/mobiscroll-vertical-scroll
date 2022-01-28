@@ -1,5 +1,5 @@
 import { Base } from '../angular/base';
-export declare const version = "5.13.3";
+export declare const version = "5.13.5";
 /**
  * @hidden
  * Interface for modules, add-ons

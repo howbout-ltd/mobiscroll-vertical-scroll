@@ -26,4 +26,7 @@ export declare class MbscWheel extends WheelBase {
     onIndexChange: (args: any) => void;
     onActiveChange: (args: any) => void;
     onSet: () => void;
+    _getItemKey(index: number, item: {
+        key: number;
+    }): number;
 }

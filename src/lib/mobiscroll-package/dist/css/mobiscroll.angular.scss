@@ -4,9 +4,9 @@ $mbsc-font-path: '' !default;
 @font-face {
     font-family: 'Mobiscroll';
     src: 
-        url($mbsc-font-path + 'icons_mobiscroll.woff?mgvolx') format('woff'),
+        url($mbsc-font-path + 'icons_mobiscroll.woff?vzllip') format('woff'),
         url($mbsc-font-path + 'icons_mobiscroll.woff') format('woff'),
-        url($mbsc-font-path + 'icons_mobiscroll.ttf?mgvolx') format('truetype');
+        url($mbsc-font-path + 'icons_mobiscroll.ttf?vzllip') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -180,6 +180,10 @@ $mbsc-font-path: '' !default;
 
 .mbsc-flex-1-1 {
   flex: 1 1;
+}
+
+.mbsc-flex-b-auto {
+  flex-basis: auto;
 }
 
 .mbsc-flex-1-0 {
@@ -12298,7 +12302,8 @@ mbsc-datetime {
 
     &.mbsc-scroller-wheel-item.mbsc-active,
     &.mbsc-scroller-wheel-item.mbsc-hover,
-    &.mbsc-scroller-wheel-item.mbsc-focus {
+    &.mbsc-scroller-wheel-item.mbsc-focus,
+    &.mbsc-scroller-wheel-header.mbsc-focus {
       background: rgba(0, 0, 0, .05);
     }
 
@@ -12504,7 +12509,8 @@ mbsc-datetime {
 
     &.mbsc-scroller-wheel-item.mbsc-active,
     &.mbsc-scroller-wheel-item.mbsc-hover,
-    &.mbsc-scroller-wheel-item.mbsc-focus {
+    &.mbsc-scroller-wheel-item.mbsc-focus,
+    &.mbsc-scroller-wheel-header.mbsc-focus {
       background: rgba($accent, 0.15);
     }
 
@@ -12733,7 +12739,8 @@ mbsc-datetime {
 
     &.mbsc-scroller-wheel-item.mbsc-active,
     &.mbsc-scroller-wheel-item.mbsc-hover,
-    &.mbsc-scroller-wheel-item.mbsc-focus {
+    &.mbsc-scroller-wheel-item.mbsc-focus,
+    &.mbsc-scroller-wheel-header.mbsc-focus {
       background: rgba($text, .1);
     }
 
@@ -12894,7 +12901,7 @@ mbsc-datetime {
 }
 
 .mbsc-scroller-wheel-group-3d {
-  perspective: 1200px;
+  perspective: 100em;
 }
 
 .mbsc-scroller-wheel-wrapper {
@@ -12959,6 +12966,11 @@ mbsc-datetime {
   top: -1px;
 }
 
+.mbsc-scroller-wheel-wrapper-3d,
+.mbsc-scroller-wheel-3d {
+  transform-style: preserve-3d;
+}
+
 .mbsc-scroller-items-3d {
   position: absolute;
   top: 50%;
@@ -12982,7 +12994,8 @@ mbsc-datetime {
   text-overflow: ellipsis;
 }
 
-.mbsc-scroller-wheel-item:focus {
+.mbsc-scroller-wheel-item:focus,
+.mbsc-scroller-wheel-header:focus {
   outline: 0;
 }
 

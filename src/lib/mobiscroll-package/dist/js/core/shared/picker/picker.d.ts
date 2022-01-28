@@ -72,7 +72,7 @@ export interface IPickerState {
     width?: number;
 }
 export declare function getIonInput(el: any, cb: (inp: HTMLInputElement) => void, nr?: number): void;
-export declare function isIonInput(el: any): boolean;
+export declare function isIonInput(el: any): any;
 /** @hidden */
 export declare class PickerBase<PropType extends IPickerProps, StateType extends IPickerState> extends BaseComponent<PropType, StateType> {
     static defaults: any;
